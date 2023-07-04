@@ -4,7 +4,7 @@ const removeFromArray = function(array, ...manyArgs) {
         for (let j = 1; j < args.length; j++) {
             if (array[i] === args[j]) {
                 array.splice(i, 1);
-                i=0;
+                i--;
             }
         }
     }
